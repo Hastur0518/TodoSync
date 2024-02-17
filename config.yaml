@@ -5,7 +5,7 @@
 # 可选值: Category | Course
 # Category 表示按项目种类创建列表
 # Course 表示按课程创建列表
-ListNameMode : Category
+ListNameMode : Course
 # 若 ListNameMode 为 Course，则可指定创建 Todo 列表的模板
 # 可用的替换参数：
 # {course.name} -> 课程名
