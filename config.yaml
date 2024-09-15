@@ -12,7 +12,7 @@ ListNameMode : Course
 # {course.coursecode} -> 课程代码（e.g.本-(2021-2022-2)-PHY1251-6-大学物理(A类）（1））
 # {course.coursecodeshort} -> 简化的课程代码（e.g.PHY1251）
 # {course.originalname} -> 原始课程名（你可以在 Canvas 上随意修改课程名，但改不掉原始课程名）
-ListNameTemplateForCourse : "Canvas - {course.name}"
+ListNameTemplateForCourse : "Canvas - {course.name} - {course.coursecodeshort}"
 # Canvas 全局通知的 Todo 列表名称
 ListNameForNotification : "Canvas 通知"
 # 若 ListNameMode 为 Category，则可指定创建 Todo 列表的名称
@@ -27,12 +27,12 @@ IgnoreTooOldItems : true
 # 遇到错误，程序退出仍返回 0
 # 如果程序总是遇到完全可以忽略的错误，可以设置为 true，防止 GitHub 的邮件轰炸
 # 注：如果附件上传失败，无论 IgnoreErrors 为何值，程序都不会认为遇到了错误
-IgnoreErrors : false
+IgnoreErrors : true
 # 输出详细的课程信息（为保护隐私，建议保持 false）
 # e.g.
 # 若为 true，输出“处理课程 高等数学 作业 第一章作业”
 # 若为 false，输出“处理课程 1 作业 3”
-VerboseMode : true
+VerboseMode : false
 # Canvas 公告 配置
 AnouncementConfig : 
   # 是否将 Canvas 公告同步到 Todo
